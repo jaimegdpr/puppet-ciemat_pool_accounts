@@ -21,7 +21,7 @@ class pool_accounts::files {
         owner => 'root',
         group => 'root',
         mode => '0700',
-        source => 'puppet:///grid_files/pool_accounts/pruebas/check_missing_users.sh',
+        source => 'puppet:///grid_files/pool_accounts/check_missing_users.sh',
         require => File['/root/pool_accounts'],
     }
 
@@ -30,7 +30,7 @@ class pool_accounts::files {
         owner => 'root',
         group => 'root',
         mode => '0700',
-        source => 'puppet:///grid_files/pool_accounts/pruebas/create_users.sh',
+        source => 'puppet:///grid_files/pool_accounts/create_users.sh',
         require => File['/root/pool_accounts'],
     }
 }
